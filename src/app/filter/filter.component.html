@@ -1,0 +1,22 @@
+<!--<div>-->
+<!--  <select>-->
+<!--    <option *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">-->
+<!--      {{tag.name}}-->
+<!--    </option>-->
+<!--  </select>-->
+<!--</div>-->
+
+<div class="container">
+  <div class="dropdown">
+    <button class="dropbtn">Select filter option</button>
+    <div class="dropdown-content">
+      <a *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">{{tag.name}}</a>
+    </div>
+  </div>
+</div>
+
+<!--<div>-->
+<!--  <a *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">-->
+<!--    {{tag.name}}-->
+<!--  </a>-->
+<!--</div>-->

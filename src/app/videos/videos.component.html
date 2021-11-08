@@ -1,0 +1,24 @@
+<app-input></app-input>
+<app-filter></app-filter>
+
+<ul>
+  <li *ngFor="let video of videos">
+    <a>
+      <img src="{{video.imageUrl}}" alt="">
+      <div class="content">
+        <div class="name">
+          search key: {{video.name}}
+        </div>
+<!--        <div class="name">-->
+<!--          {{video.author}}-->
+<!--        </div>-->
+        <small class="channel">
+          {{video.channel}}
+        </small>
+        <div class="rating">
+          {{video.rating}}
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
